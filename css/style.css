@@ -1,0 +1,146 @@
+body * {
+	font-family: 'Open Sans' !important;
+}
+
+.ui-collapsible-inset .ui-collapsible-content {
+	/*float: left;
+	width: 100%;*/
+	overflow: hidden;
+}
+
+.pull-left {
+	float: left;
+	width: 48%;
+	padding-right: 20px 
+}
+
+.pull-left:last-child {
+	padding-right: 0px;
+}
+
+.pull-left:before,
+.pull-left:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.ui-datepicker {
+	
+}
+
+.ui-datepicker-calendar td a.ui-btn {
+	margin: 0 0 0 0;
+}
+
+#patient_calendar {
+	width: 100%;
+}
+
+#view_date_output {
+	height: 110px;
+	width: 100%;
+}
+
+#view_date_output table {
+	border: 1px solid #BBB;
+	border-radius: 7px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+#view_date_output table td {
+	padding: 7px;
+}
+
+#view_date_output table tr {
+	border: 1px solid #bbb;
+	background: #fff;
+	font-weight: 700;
+	color: #333;
+	text-shadow: 0 1px 0 #fff;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#fafafa),to(#f6f6f6));
+	background-image: -webkit-linear-gradient(#fafafa,#f6f6f6);
+	background-image: -moz-linear-gradient(#fafafa,#f6f6f6);
+	background-image: -ms-linear-gradient(#fafafa,#f6f6f6);
+	background-image: -o-linear-gradient(#fafafa,#f6f6f6);
+	background-image: linear-gradient(#fafafa,#f6f6f6);
+}
+
+.red {
+	color: #cc2000;
+}
+
+.yellow {
+	color: #f0f414;
+}
+
+.green {
+	color: #16d63d;
+}
+
+.row {
+	width: 100%;
+	float: left;
+}
+
+.row:before,
+.row:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+body#login {
+	font-size: 14px;
+}
+
+
+#loginForm {
+	max-width: 520px;
+	margin: 10px auto;
+}
+
+#loginResult {
+	max-width: 520px;
+	margin: 10px auto;
+	padding: 20px;
+	text-shadow: none;
+	font-size: 18px;
+	min-height: 35px;
+}
+
+#loginResult a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+#login .ui-btn-icon-left .ui-btn-inner {
+	padding: .6em 20px
+}
+
+.error {
+	background: rgb(235, 91, 91);
+	border-radius: 8px;
+	transition: display 2s, height 2s, transform 2s;
+	-webkit-transition: display 2s, height 2s, -webkit-transform 2s;
+}
+
+@media all and (max-width: 500px) {
+	#loginForm {
+		width: auto;
+		margin: 30px;
+	}
+}
+
+@media (max-width: 550px) {
+	.pull-left,
+	#view_date_output table {
+		float: none;
+		width: 100%;
+	}
+	#datepicker_view {
+		padding-right: 0px;
+	}	
+}

@@ -1,0 +1,91 @@
+.ui-collapsible-inset .ui-collapsible-content {
+	/*float: left;
+	width: 100%;*/
+	overflow: hidden;
+}
+
+.pull-left {
+	float: left;
+	width: 36%;
+	padding-right: 20px 
+}
+
+.pull-left:last-child {
+	padding-right: 0px;
+}
+
+.pull-left:before,
+.pull-left:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.ui-datepicker {
+	
+}
+
+#view_date_output {
+	height: 110px;
+	width: 100%;
+}
+
+#view_date_output table {
+	border: 1px solid #BBB;
+	border-radius: 7px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+#view_date_output table td {
+	padding: 7px;
+}
+
+#view_date_output table tr {
+	border: 1px solid #bbb;
+	background: #fff;
+	font-weight: 700;
+	color: #333;
+	text-shadow: 0 1px 0 #fff;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#fafafa),to(#f6f6f6));
+	background-image: -webkit-linear-gradient(#fafafa,#f6f6f6);
+	background-image: -moz-linear-gradient(#fafafa,#f6f6f6);
+	background-image: -ms-linear-gradient(#fafafa,#f6f6f6);
+	background-image: -o-linear-gradient(#fafafa,#f6f6f6);
+	background-image: linear-gradient(#fafafa,#f6f6f6);
+}
+
+.red {
+	color: #cc2000;
+}
+
+.yellow {
+	color: #f0f414;
+}
+
+.green {
+	color: #16d63d;
+}
+
+.row {
+	width: 100%;
+	float: left;
+}
+
+.row:before,
+.row:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+@media (max-width: 550px) {
+	.pull-left,
+	#view_date_output table {
+		float: none;
+		width: 100%;
+	}
+	#datepicker_view {
+		padding-right: 0px;
+	}	
+}

@@ -1,0 +1,43 @@
+<?
+	//--------------------------------------------------------------------------
+	// DB Login info
+	//--------------------------------------------------------------------------
+	
+	define("DB_RDBMS", "XXXXXX");
+	define("DB_HOST", "XXXXXX");
+	define("DB_NAME", "XXXXXX");
+	define("DB_USER", "XXXXXX");
+	define("DB_PASS", "XXXXXX");
+	
+	class Database {
+		private static $db;
+	    private $connection;
+		
+		// Database Managment System (Database Type)
+		private $rdbms = DB_RDBMS;
+		// Database Host Address/IP
+	    private $dbhost = DB_HOST;
+	    // Database Name
+	    private $dbname = DB_NAME;
+	    // Database User Name
+	    private $dbuser = DB_USER;
+	    // Database Password
+	    private $dbpass = DB_PASS;
+
+	    private function __construct() {
+	    	$this->connection = new PDO($this->rdbms.':host='.$this->dbhost.';dbname='.$this->dbname, $this->dbuser, $this->dbpass);
+		}
+
+		function __destruct() {
+	    	//$this->connection->close();
+			$this->connection = null;
+	    }
+
+		public static function getConnection() {
+	    	if ($db == null) {
+	        	$db = new Database();
+			}
+	        return $db->connection;
+		}
+	}
+?>
